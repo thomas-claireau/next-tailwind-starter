@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'fr',
+    locales: ["en", "fr"],
+    defaultLocale: "fr",
   },
   eslint: {
-    dirs: ['pages', 'components'],
+    dirs: ["pages", "components"],
   },
 };
 

@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/public/*": ["public/*"],
+      "@/components/*": ["components/*"],
+      "@/content/*": ["content/*"],
+      "@/styles/*": ["styles/*"]
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -23,9 +27,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-		"pages/_app.js"
-, "pages/index.tsx", "AppContext.js"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "pages/_app.js",
+    "pages/index.tsx",
+    "AppContext.js"
+  ],
+  "exclude": ["node_modules"]
 }

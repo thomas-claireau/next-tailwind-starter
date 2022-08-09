@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { AppContextProvider } from '../AppContext';
-import '../styles/globals.css';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { AppContextProvider } from "../AppContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -14,7 +14,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <AppContextProvider>
       <Head>
-        {langs.map((lang) => <link key={lang} rel="alternate" hrefLang={lang} href={`/${lang}`} />)}
+        {langs.map((lang) => (
+          <link key={lang} rel="alternate" hrefLang={lang} href={`/${lang}`} />
+        ))}
       </Head>
       <div className="dark:bg-dark dark:text-light">
         <Component {...pageProps} />

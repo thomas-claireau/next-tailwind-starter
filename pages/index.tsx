@@ -1,4 +1,4 @@
-import { useAppContext } from '../AppContext';
+import { useAppContext } from "../AppContext";
 
 export default function Home() {
   const { i18n } = useAppContext();
